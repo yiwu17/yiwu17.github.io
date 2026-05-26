@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="彭若鑫 Peng Ruoxin 的个人求职作品集，聚焦 AI 应用开发、数据分析、算法实习、机器视觉与科研项目展示。"
+    >
+    <title>彭若鑫 | Data & AI Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">RX</span>
+        <span>彭若鑫</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">作品</a>
+        <a href="#resume">履历</a>
+        <a href="#skills">能力</a>
+        <a href="#achievements">成果</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="nav-action" href="#contact">联系我</a>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Peng Ruoxin · AI Application · Data Analysis</p>
+          <h1>彭若鑫</h1>
+          <p class="name-en">Peng Ruoxin</p>
+          <p class="hero-lede">
+            数据科学与大数据技术本科，人工智能与大数据计算硕士在读。关注 AI 应用、机器视觉、数据分析与可视化，把算法项目做成可运行、可展示、可复盘的作品。
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#work">查看作品</a>
+            <a class="button secondary" href="#resume">看履历</a>
+          </div>
+          <dl class="hero-facts" aria-label="Quick facts">
+            <div>
+              <dt>目标岗位</dt>
+              <dd>AI 应用开发 / 数据分析 / 算法实习</dd>
+            </div>
+            <div>
+              <dt>目标城市</dt>
+              <dd>深圳 / 成都</dd>
+            </div>
+            <div>
+              <dt>可展示项目</dt>
+              <dd>6+ 个项目案例</dd>
+            </div>
+            <div>
+              <dt>当前状态</dt>
+              <dd>Seeking internship</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-preview" aria-label="Featured project preview">
+          <div class="preview-toolbar">
+            <div class="window-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="segmented-control" aria-label="Preview selector">
+              <button class="is-active" type="button" data-preview="analytics">Profile</button>
+              <button type="button" data-preview="mobile">Vision</button>
+              <button type="button" data-preview="assistant">RAG Tool</button>
+            </div>
+          </div>
+
+          <div class="visual-stage" data-stage="analytics">
+            <div class="dashboard-preview" aria-hidden="true">
+              <div class="metric-tile highlight">
+                <span>GPA</span>
+                <strong>3.76</strong>
+              </div>
+              <div class="metric-tile">
+                <span>Rank</span>
+                <strong>5/29</strong>
+              </div>
+              <div class="metric-tile">
+                <span>Projects</span>
+                <strong>6+</strong>
+              </div>
+              <div class="profile-route-card">
+                <div class="route-step is-active">
+                  <span>Target</span>
+                  <strong>AI 应用开发 / 数据分析 / 算法实习</strong>
+                </div>
+                <div class="route-step">
+                  <span>Evidence</span>
+                  <strong>RAG Tool · Vision System · Tableau Dashboard</strong>
+                </div>
+                <div class="route-step">
+                  <span>Proof</span>
+                  <strong>Scholar 论文 · 软著 · 可播放作品视频</strong>
+                </div>
+              </div>
+              <div class="task-list">
+                <span class="task-done" data-label="AI / RAG / LLM Workflow"></span>
+                <span class="task-done" data-label="Vision / YOLO / ConvNeXt"></span>
+                <span data-label="Data / MySQL / Tableau"></span>
+              </div>
+            </div>
+
+            <div class="phone-preview vision-panel" aria-hidden="true">
+              <div class="hero-panel-title">
+                <span>Computer Vision Workbench</span>
+                <strong>生猪聚集行为实时识别</strong>
+              </div>
+              <div class="vision-workbench">
+                <div class="live-frame">
+                  <video autoplay loop muted playsinline preload="metadata" poster="assets/generated/生猪聚集行为智能识别-cover.jpg">
+                    <source src="assets/optimized/pig-clustering-demo.mp4" type="video/mp4">
+                  </video>
+                  <span class="scan-line"></span>
+                  <span class="detect-box pig-a">pig 0.96</span>
+                  <span class="detect-box pig-b">pig 0.94</span>
+                  <span class="detect-box cluster-a">cluster 0.82</span>
+                </div>
+                <div class="pipeline-card">
+                  <span>01 3000 images</span>
+                  <span>02 YOLOv12-seg</span>
+                  <span>03 KNN + LOF</span>
+                  <span>04 Cluster Index</span>
+                </div>
+              </div>
+              <div class="vision-kpis">
+                <div><span>mAP</span><strong>96%</strong></div>
+                <div><span>FPS</span><strong>153.84</strong></div>
+                <div><span>Accuracy</span><strong>93.79%</strong></div>
+              </div>
+            </div>
+
+            <div class="assistant-preview rag-panel" aria-hidden="true">
+              <div class="hero-panel-title">
+                <span>Local RAG Console</span>
+                <strong>论文上传后，答案带证据回来</strong>
+              </div>
+              <div class="rag-workbench">
+                <div class="rag-video">
+                  <video autoplay loop muted playsinline preload="metadata" poster="assets/generated/轻量级学术论文 RAG 系统-cover.jpg">
+                    <source src="assets/optimized/rag-system-demo.mp4" type="video/mp4">
+                  </video>
+                  <span>Streamlit Demo</span>
+                </div>
+                <div class="rag-console">
+                  <div class="rag-query">How does the method evaluate rice quality?</div>
+                  <div class="retrieval-stack">
+                    <span>chunk #03 · score 0.91</span>
+                    <span>chunk #08 · score 0.87</span>
+                    <span>chunk #12 · score 0.84</span>
+                  </div>
+                  <div class="rag-answer-card">
+                    <strong>Answer</strong>
+                    <p>Combines detected regions, classification output and quality metrics with cited evidence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rag-flow">
+                <span>PDF</span>
+                <span>FAISS</span>
+                <span>qwen2</span>
+                <span>Evidence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strategy-strip" aria-label="Portfolio strategy">
+        <div>
+          <strong>页面目标</strong>
+          <span>招聘方 30 秒内看懂方向，3 分钟内理解项目深度。</span>
+        </div>
+        <div>
+          <strong>核心表达</strong>
+          <span>把 AI、视觉、数据分析项目转成可观看、可复盘的作品证据。</span>
+        </div>
+        <div>
+          <strong>作品形式</strong>
+          <span>项目截图、录屏视频、论文、代码仓库和交互式 Demo 统一呈现。</span>
+        </div>
+      </section>
+
+      <section id="work" class="section-band work-section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>作品不是列表，而是可观看的证据。</h2>
+          <p>
+            已接入项目截图、录屏预览和交互式 Dashboard，让招聘方能直接看到作品如何运行。
+          </p>
+        </div>
+
+        <div class="work-controls" aria-label="Project filters">
+          <button class="is-active" type="button" data-filter="all">全部</button>
+          <button type="button" data-filter="vision">视觉</button>
+          <button type="button" data-filter="data">数据</button>
+          <button type="button" data-filter="ai">AI</button>
+          <button type="button" data-filter="system">系统</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="ai research">
+            <div class="project-media flow-cover" aria-label="双分区两阶段 DeRy 架构重组搜索流程图">
+              <img
+                class="project-asset is-contain"
+                src="assets/dual-partition-two-stage-dery-reassembly.png"
+                alt="Dual-Partition Two-Stage Reassembly for DeRy Architecture Search 流程图"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 01</span>
+                <span>AI Research</span>
+              </div>
+              <h3>毕业设计（进行中）｜双分区两阶段 DeRy 架构重组搜索</h3>
+              <p>
+                拆分 CNN/ResNet、RegNet、ViT、Swin 等预训练 blocks，结合 coarse/fine partition、两阶段重组搜索与 zero-shot 评估输出候选架构。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>DeRy</span>
+                <span>NAS</span>
+                <span>LLM</span>
+                <span>Zero-Shot</span>
+              </div>
+              <div class="project-links">
+                <a href="#case-dery">查看案例</a>
+                <a href="assets/dual-partition-two-stage-dery-reassembly.png" target="_blank" rel="noreferrer">打开流程图</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ai system">
+            <div class="project-media" aria-label="轻量级学术论文 RAG 系统视频预览">
+              <video
+                class="project-asset"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/generated/轻量级学术论文 RAG 系统-cover.jpg"
+              >
+                <source src="assets/optimized/rag-system-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 02</span>
+                <span>AI Workflow</span>
+              </div>
+              <h3>轻量级学术论文 RAG 系统</h3>
+              <p>
+                串联 PDF 预处理、FAISS 向量检索、Ollama/qwen2 推理与 Streamlit 前端，实现本地论文语料问答和评测展示。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>RAG</span>
+                <span>Streamlit</span>
+                <span>FAISS</span>
+              </div>
+              <div class="project-links">
+                <a href="#intro-rag">动画介绍</a>
+                <a href="assets/optimized/rag-system-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data system">
+            <div class="project-media" aria-label="票务分析与可视化平台截图">
+              <img class="project-asset" src="assets/票务分析与可视化平台.png" alt="票务分析与可视化平台 Tableau Dashboard 截图">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 03</span>
+                <span>Data Dashboard</span>
+              </div>
+              <h3>票务分析与可视化平台</h3>
+              <p>
+                通过 Python 爬取 12306 票务数据，利用 MySQL、Python 与 Tableau 建立可视化平台，支持车票查询与关联分析。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>Python</span>
+                <span>MySQL</span>
+                <span>Tableau</span>
+              </div>
+              <div class="project-links">
+                <a href="#ticket-dashboard">查看 Dashboard</a>
+                <a href="https://public.tableau.com/shared/96ZR2BTJH?:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noreferrer">Tableau Public</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="vision data research">
+            <div class="project-media" aria-label="智慧作物选种研究视频预览">
+              <video
+                class="project-asset"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/generated/基于机器视觉的智慧作物选种研究-cover.jpg"
+              >
+                <source src="assets/optimized/rice-vision-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 04</span>
+                <span>Computer Vision</span>
+              </div>
+              <h3>基于机器视觉的智慧作物选种研究</h3>
+              <p>
+                使用 ANN、YOLO、ConvNeXt 与聚类算法完成大米分类、实时检测、残缺度评估与垩白区域面积计算，产出论文 2 篇。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>YOLO</span>
+                <span>ConvNeXt</span>
+                <span>Rice Quality</span>
+              </div>
+              <div class="project-links">
+                <a href="#intro-rice">动画介绍</a>
+                <a href="assets/optimized/rice-vision-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="vision research">
+            <div class="project-media" aria-label="生猪聚集行为智能识别视频预览">
+              <video
+                class="project-asset"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/generated/生猪聚集行为智能识别-cover.jpg"
+              >
+                <source src="assets/optimized/pig-clustering-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 05</span>
+                <span>Vision Research</span>
+              </div>
+              <h3>生猪聚集行为智能识别</h3>
+              <p>
+                主持项目并构建 3000 张生猪图像数据集；YOLOv12 改进后 FPS 84.03→153.84（+83%），Params -48%，聚集识别准确率达 93.79%。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>YOLO</span>
+                <span>kNN</span>
+                <span>mAP 96%</span>
+                <span>Behavior Analysis</span>
+              </div>
+              <div class="project-links">
+                <a href="#intro-pig">动画介绍</a>
+                <a href="assets/optimized/pig-clustering-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="system data">
+            <div class="project-media" aria-label="博物馆藏品管理系统视频预览">
+              <video
+                class="project-asset"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/博物馆藏品管理系统-首页.png"
+              >
+                <source src="assets/optimized/museum-exhibition-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 06</span>
+                <span>Database System</span>
+              </div>
+              <h3>博物馆藏品管理系统</h3>
+              <p>
+                作为课设队长，利用 MySQL、Java 与 Spring Boot 完成数据库管理系统，实现权限管理、输入拦截、弹窗提醒和图片路径存储。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>MySQL</span>
+                <span>Spring Boot</span>
+                <span>Java</span>
+              </div>
+              <div class="project-links">
+                <a href="#intro-museum">动画介绍</a>
+                <a href="assets/optimized/museum-damage-demo.mp4" target="_blank" rel="noreferrer">受损记录</a>
+                <a href="assets/optimized/museum-exhibition-demo.mp4" target="_blank" rel="noreferrer">展出管理</a>
+                <a href="assets/optimized/museum-repair-demo.mp4" target="_blank" rel="noreferrer">修复记录</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ticket-dashboard" class="section-band tableau-section">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Tableau Dashboard</p>
+          <h2>票务分析可视化平台</h2>
+          <p>
+            这是已接入的 Tableau Public 交互式作品。招聘方可以直接在页面里查看五一票务数据的可视化分析，也可以打开 Tableau Public 查看完整版本。
+          </p>
+        </div>
+        <div class="tableau-shell">
+          <div class="tableau-shell-header">
+            <span>Tableau Public Embed</span>
+            <a href="https://public.tableau.com/shared/96ZR2BTJH?:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noreferrer">
+              打开完整 Dashboard
+            </a>
+          </div>
+          <div class="tableau-embed">
+            <div class="tableau-scale-frame" id="ticketTableauFrame">
+              <div class="tableauPlaceholder" id="ticketTableauViz">
+                <noscript>
+                  <a href="https://public.tableau.com/shared/96ZR2BTJH?:display_count=n&amp;:origin=viz_share_link">
+                    <img
+                      alt="五一去哪呢票务分析 Tableau Dashboard"
+                      src="https://public.tableau.com/static/images/96/96ZR2BTJH/1_rss.png"
+                    >
+                  </a>
+                </noscript>
+                <object class="tableauViz">
+                  <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+                  <param name="embed_code_version" value="3">
+                  <param name="path" value="shared/96ZR2BTJH">
+                  <param name="toolbar" value="yes">
+                  <param name="static_image" value="https://public.tableau.com/static/images/96/96ZR2BTJH/1.png">
+                  <param name="animate_transition" value="yes">
+                  <param name="display_static_image" value="yes">
+                  <param name="display_spinner" value="yes">
+                  <param name="display_overlay" value="yes">
+                  <param name="display_count" value="yes">
+                  <param name="language" value="zh-CN">
+                  <param name="filter" value="showOnboarding=true">
+                </object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="case-dery" class="section-band case-section">
+        <div class="case-layout">
+          <div class="case-copy">
+            <p class="eyebrow">Featured Case Study</p>
+            <h2>双分区两阶段 DeRy 架构重组搜索</h2>
+            <p>
+              毕业设计进行中，围绕预训练模型 blocks 的可解释重组搜索，构建从模型拆分、双分区映射、两阶段架构搜索到 zero-shot 评估的完整流程。
+            </p>
+            <div class="case-points">
+              <div>
+                <strong>1. Model Zoo</strong>
+                <span>拆分 CNN/ResNet、RegNet、ViT、Swin 等预训练 blocks，记录 stage、group、Params、FLOPs 和特征形状。</span>
+              </div>
+              <div>
+                <strong>2. Dual Partition</strong>
+                <span>使用 coarse partition（K=6）稳定主干路径，使用 fine partition（K=8）扩展局部 2D 分支选择空间。</span>
+              </div>
+              <div>
+                <strong>3. Two-Stage Search</strong>
+                <span>Stage-I 搜索主干架构，Stage-II 保留主干并重组局部 2D 分支，通过 zero-shot 评估筛选候选结构。</span>
+              </div>
+              <div>
+                <strong>4. LLM Insight</strong>
+                <span>构建模型结构知识图谱，利用 LLM 学习结构规律与 FLOPs/Params 约束，形成可解释的重组策略结论。</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-demo" aria-label="Interactive case study demo">
+            <div class="demo-header">
+              <span>Search Workflow</span>
+              <button type="button" id="reset-demo">重置</button>
+            </div>
+            <div class="demo-canvas">
+              <div class="journey-card is-active" data-step="1">
+                <span>Partition</span>
+                <strong>K=6 主干 / K=8 分支</strong>
+              </div>
+              <div class="journey-card" data-step="2">
+                <span>Reassemble</span>
+                <strong>两阶段结构重组</strong>
+              </div>
+              <div class="journey-card" data-step="3">
+                <span>Evaluate</span>
+                <strong>Zero-Shot 评分输出</strong>
+              </div>
+            </div>
+            <label class="range-control" for="demo-range">
+              <span>Demo progress</span>
+              <input id="demo-range" type="range" min="1" max="3" value="1">
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section id="motion-intros" class="section-band motion-intro-section">
+        <div class="section-heading">
+          <p class="eyebrow">Motion Intros</p>
+          <h2>视频项目用轻量动画先讲清楚看点。</h2>
+          <p>
+            这些不是重复案例，而是给视频做入口导览：先用 10 秒理解项目逻辑，再打开视频看真实运行过程。
+          </p>
+        </div>
+
+        <div class="motion-grid">
+          <article id="intro-rag" class="motion-card">
+            <div class="motion-stage motion-rag" aria-hidden="true">
+              <span class="flow-node">PDF</span>
+              <span class="flow-link"></span>
+              <span class="flow-node">FAISS</span>
+              <span class="flow-link"></span>
+              <span class="flow-node">qwen2</span>
+              <span class="flow-answer">Answer + Evidence</span>
+            </div>
+            <div class="motion-copy">
+              <div class="motion-meta">
+                <span>Case 02</span>
+                <span>AI Workflow</span>
+              </div>
+              <h3>轻量级学术论文 RAG 系统</h3>
+              <p>动画表达“上传论文 - 检索片段 - 本地模型回答”的链路，视频负责展示真实界面。</p>
+              <a href="assets/optimized/rag-system-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+            </div>
+          </article>
+
+          <article id="intro-rice" class="motion-card">
+            <div class="motion-stage motion-rice" aria-hidden="true">
+              <div class="scan-board">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i></i>
+              </div>
+              <div class="motion-bars">
+                <span style="--w: 76%"></span>
+                <span style="--w: 54%"></span>
+                <span style="--w: 88%"></span>
+              </div>
+            </div>
+            <div class="motion-copy">
+              <div class="motion-meta">
+                <span>Case 04</span>
+                <span>Computer Vision</span>
+              </div>
+              <h3>基于机器视觉的智慧作物选种研究</h3>
+              <p>动画表达“视觉扫描 - 分类检测 - 质量指标输出”，对应视频里的检测与评估演示。</p>
+              <a href="assets/optimized/rice-vision-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+            </div>
+          </article>
+
+          <article id="intro-pig" class="motion-card">
+            <div class="motion-stage motion-pig" aria-hidden="true">
+              <div class="tracking-board">
+                <span class="track-dot a"></span>
+                <span class="track-dot b"></span>
+                <span class="track-dot c"></span>
+                <span class="track-dot d"></span>
+                <span class="cluster-ring"></span>
+              </div>
+              <div class="motion-bars compact">
+                <span style="--w: 68%"></span>
+                <span style="--w: 82%"></span>
+              </div>
+            </div>
+            <div class="motion-copy">
+              <div class="motion-meta">
+                <span>Case 05</span>
+                <span>Vision Research</span>
+              </div>
+              <h3>生猪聚集行为智能识别</h3>
+              <p>3000 张图像、每张 6 头猪标注；最终模型 mAP 提至 96%，FPS 提升 83%，聚集行为准确率 93.79%。</p>
+              <a href="assets/optimized/pig-clustering-demo.mp4" target="_blank" rel="noreferrer">打开视频</a>
+            </div>
+          </article>
+
+          <article id="intro-museum" class="motion-card">
+            <div class="motion-stage motion-museum" aria-hidden="true">
+              <div class="record-stack">
+                <span>Collection</span>
+                <span>Damage</span>
+                <span>Exhibition</span>
+                <span>Repair</span>
+              </div>
+              <div class="route-line"></div>
+            </div>
+            <div class="motion-copy">
+              <div class="motion-meta">
+                <span>Case 06</span>
+                <span>Database System</span>
+              </div>
+              <h3>博物馆藏品管理系统</h3>
+              <p>动画表达“藏品记录 - 状态变更 - 展出/修复闭环”，视频展示后台管理操作。</p>
+              <div class="motion-links">
+                <a href="assets/optimized/museum-damage-demo.mp4" target="_blank" rel="noreferrer">受损记录</a>
+                <a href="assets/optimized/museum-exhibition-demo.mp4" target="_blank" rel="noreferrer">展出管理</a>
+                <a href="assets/optimized/museum-repair-demo.mp4" target="_blank" rel="noreferrer">修复记录</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section-band resume-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Resume Snapshot</p>
+          <h2>教育和项目经历按时间线展开。</h2>
+        </div>
+        <div class="resume-layout">
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-date">2021/09 - 2025/07</span>
+              <h3>中国农业大学 · 数据科学与大数据技术（本科）</h3>
+              <p>GPA 3.76/4，Rank 5/29；主修人工智能、机器学习、大数据存储与处理、大数据可视化分析、数据挖掘。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2022/12 - 2024/03</span>
+              <h3>校级大创项目 · 基于机器视觉的智慧作物选种研究</h3>
+              <p>使用 ANN、YOLO、ConvNeXt 与聚类算法完成大米分类、实时检测、残缺度评估与垩白区域面积计算，产出 Google Scholar 收录论文 2 篇。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2023/02 - 2023/06</span>
+              <h3>数据库原理与实践课设（队长） · 博物馆藏品管理系统</h3>
+              <p>使用 MySQL、Java 与 Spring Boot 实现藏品数据库管理系统，完成权限管理、错误输入拦截、弹窗提醒和图片路径存储方案。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2023/03 - 2024/03</span>
+              <h3>校级大创项目（主持人） · 生猪聚集行为智能识别</h3>
+              <p>基于 3000 张图像训练 YOLOv12-FasterNet-SCSA，Params 2.82M→1.46M、FLOPs 10.4G→7.1G、FPS 84.03→153.84、mAP 提至 96%；KNN+LOF 聚集算法准确率 93.79%，误检率下降 57.14%。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2024/02 - 2024/04</span>
+              <h3>大数据分析与可视化项目 · 票务分析</h3>
+              <p>通过 Python 爬取 12306 票务数据，利用 MySQL、Python 与 Tableau 建立可视化平台，支持车票信息交互查询与关联分析。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2025/09 - 2027/03</span>
+              <h3>香港理工大学 · 人工智能与大数据计算（硕士）</h3>
+              <p>硕士在读，持续关注 AI 应用、数据计算、检索增强、模型评估与可视化表达。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2025/09 - 至今</span>
+              <h3>硕士课程项目 · 轻量级学术论文 RAG 系统</h3>
+              <p>负责交互 APP 与系统整合，串联 PDF 预处理、FAISS 向量检索、Ollama/qwen2 推理与 Streamlit 前端，实现本地论文语料问答和评测结果展示。</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2025/12 - 至今</span>
+              <h3>毕业设计（进行中） · 双分区两阶段 DeRy 架构重组搜索</h3>
+              <p>拆分 CNN/ResNet、RegNet、ViT、Swin 等预训练 blocks，结合 coarse/fine partition、两阶段重组搜索、zero-shot 评估与 LLM 结构知识图谱，形成可解释的架构重组策略。</p>
+            </article>
+          </div>
+
+          <aside class="resume-panel" aria-label="Resume highlights">
+            <h3>经历重点</h3>
+            <ul>
+              <li>时间线覆盖硕士 / 本科教育、毕业设计、科研项目、课程项目和系统开发课设。</li>
+              <li>项目方向集中在 AI 应用、机器视觉、数据分析、可视化 Dashboard 和数据库系统。</li>
+              <li>成果包括 Google Scholar 收录论文、会议论文、软件著作权和可交互作品展示。</li>
+            </ul>
+            <a class="button secondary full" href="assets/peng-ruoxin-resume.pdf" download>下载简历 PDF</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="skills" class="section-band skills-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Capability Map</p>
+          <h2>能力分层，而不是堆关键词。</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <span class="skill-index">01</span>
+            <h3>AI 应用</h3>
+            <p>RAG、LLM 工作流、论文问答、本地推理、评测展示。</p>
+          </article>
+          <article>
+            <span class="skill-index">02</span>
+            <h3>机器视觉</h3>
+            <p>YOLO、ConvNeXt、分类检测、质量评估与行为识别。</p>
+          </article>
+          <article>
+            <span class="skill-index">03</span>
+            <h3>数据分析</h3>
+            <p>Python、MySQL、数据爬取、指标分析与可视化平台。</p>
+          </article>
+          <article>
+            <span class="skill-index">04</span>
+            <h3>科研表达</h3>
+            <p>论文产出、项目复盘、成果整理、可视化作品展示。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements" class="section-band achievements-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Research & Awards</p>
+          <h2>科研成果、竞赛与证书集中展示。</h2>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-panel">
+            <h3>科研成果</h3>
+            <ul class="achievement-list">
+              <li>
+                <strong>AAAI 2026 Workshop</strong>
+                <span>
+                  An overall real-time mechanism for classification and quality evaluation of rice，排序共 1/7。
+                  <a class="scholar-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=SluSJCYAAAAJ&amp;citation_for_view=SluSJCYAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noreferrer">Google Scholar 论文页</a>
+                </span>
+              </li>
+              <li>
+                <strong>CAIT 2025</strong>
+                <span>
+                  An Improved Pure Fully Connected Neural Network for Rice Grain Classification，排序 2/8。
+                  <a class="scholar-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=SluSJCYAAAAJ&amp;citation_for_view=SluSJCYAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noreferrer">Google Scholar 论文页</a>
+                </span>
+              </li>
+              <li>
+                <strong>ECPLF 2024</strong>
+                <span>Intelligent recognition of live pig aggregation behavior based on convolutional neural network，排序 1/2；配套猪只聚集程度计算软件 V1.0，聚集行为识别准确率 93.79%。</span>
+              </li>
+              <li>
+                <strong>软件著作权</strong>
+                <span>大米品质检测软件 V1.0；猪只聚集程度计算软件 V1.0。</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="achievement-panel">
+            <h3>竞赛与基础能力</h3>
+            <ul class="achievement-list">
+              <li>
+                <strong>全国大学生数学竞赛</strong>
+                <span>2022、2023 三等奖。</span>
+              </li>
+              <li>
+                <strong>全国大学生计算机设计大赛北京市级“朔日杯”赛</strong>
+                <span>2024 三等奖。</span>
+              </li>
+              <li>
+                <strong>中国农业大学大数据技能竞赛</strong>
+                <span>2022 二等奖。</span>
+              </li>
+              <li>
+                <strong>英语与工具</strong>
+                <span>雅思 6.5；Python、MySQL、PyTorch、Tableau、FineBI、Coze。</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>让招聘方下一步很明确。</h2>
+          <p>目前开放深圳 / 成都实习机会，方向包括 AI 应用开发、数据分析和算法实习。可通过邮箱或微信联系，也可以查看代码、技术博客和学术主页。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:yiwu1777@gmail.com">yiwu1777@gmail.com</a>
+          <span class="button secondary contact-static">微信：rxpeng1777</span>
+          <a class="button secondary" href="assets/peng-ruoxin-resume.pdf" download>下载简历 PDF</a>
+          <a class="button secondary" href="https://github.com/yiwu17" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://blog.csdn.net/m0_70098011?spm=1000.2115.3001.5343" target="_blank" rel="noreferrer">CSDN</a>
+          <a class="button secondary" href="https://scholar.google.com/citations?user=SluSJCYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built for visual proof, fast scanning, and real project demos.</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
