@@ -25,7 +25,13 @@
         <a href="#achievements">成果</a>
         <a href="#contact">联系</a>
       </nav>
-      <a class="nav-action" href="#contact">联系我</a>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language selector">
+          <button class="is-active" type="button" data-lang-switch="zh">ZH</button>
+          <button type="button" data-lang-switch="en">EN</button>
+        </div>
+        <a class="nav-action" href="#contact">联系我</a>
+      </div>
     </header>
 
     <main id="main">
@@ -34,6 +40,16 @@
           <p class="eyebrow">Peng Ruoxin · AI Application · Data Analysis</p>
           <h1>彭若鑫</h1>
           <p class="name-en">Peng Ruoxin</p>
+          <dl class="hero-score-strip" aria-label="Academic highlights">
+            <div>
+              <dt>GPA</dt>
+              <dd>3.76/4</dd>
+            </div>
+            <div>
+              <dt>Rank</dt>
+              <dd>5/29</dd>
+            </div>
+          </dl>
           <p class="hero-lede">
             数据科学与大数据技术本科，人工智能与大数据计算硕士在读。关注 AI 应用、机器视觉、数据分析与可视化，把算法项目做成可运行、可展示、可复盘的作品。
           </p>
@@ -52,7 +68,7 @@
             </div>
             <div>
               <dt>可展示项目</dt>
-              <dd>6+ 个项目案例</dd>
+              <dd>7+ 个项目案例</dd>
             </div>
             <div>
               <dt>当前状态</dt>
@@ -69,73 +85,45 @@
               <span></span>
             </div>
             <div class="segmented-control" aria-label="Preview selector">
-              <button class="is-active" type="button" data-preview="analytics">Profile</button>
-              <button type="button" data-preview="mobile">Vision</button>
+              <button class="is-active" type="button" data-preview="mobile">AI Product</button>
               <button type="button" data-preview="assistant">RAG Tool</button>
             </div>
           </div>
 
-          <div class="visual-stage" data-stage="analytics">
-            <div class="dashboard-preview" aria-hidden="true">
-              <div class="metric-tile highlight">
-                <span>GPA</span>
-                <strong>3.76</strong>
-              </div>
-              <div class="metric-tile">
-                <span>Rank</span>
-                <strong>5/29</strong>
-              </div>
-              <div class="metric-tile">
-                <span>Projects</span>
-                <strong>6+</strong>
-              </div>
-              <div class="profile-route-card">
-                <div class="route-step is-active">
-                  <span>求职方向</span>
-                  <strong>AI 应用开发<br>数据分析<br>算法实习</strong>
+          <div class="visual-stage" data-stage="mobile">
+            <div id="xunmeng-demo" class="phone-preview xunmeng-hero-panel">
+              <div class="xunmeng-hero-device">
+                <div class="xunmeng-hero-bar">
+                  <span></span>
+                  <strong>dream.rxpeng.com</strong>
                 </div>
-                <div class="route-step">
-                  <span>已接入作品</span>
-                  <strong>RAG 演示<br>视觉识别视频<br>Tableau 看板</strong>
+                <div class="xunmeng-launch-screen" data-xunmeng-launch role="button" tabindex="0" aria-label="加载寻梦在线体验">
+                  <div class="xunmeng-launch-copy">
+                    <span>AI DREAM COMPANION</span>
+                    <h3>寻梦</h3>
+                    <p>记录梦境、整理故事、追问线索，并把梦变成漫画分镜。</p>
+                  </div>
+                  <div class="xunmeng-launch-orbit" aria-hidden="true">
+                    <span></span>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+                  <div class="xunmeng-launch-actions">
+                    <button type="button" data-load-xunmeng>加载在线体验</button>
+                  </div>
+                  <div class="xunmeng-launch-foot">
+                    点击任意处开启真实在线体验
+                  </div>
                 </div>
-                <div class="route-step">
-                  <span>可验证成果</span>
-                  <strong>Scholar 论文<br>GitHub<br>PDF 简历</strong>
-                </div>
-              </div>
-              <div class="task-list">
-                <span class="task-done" data-label="RAG：上传论文后返回证据答案"></span>
-                <span class="task-done" data-label="视觉：检测结果转成行为指标"></span>
-                <span data-label="数据：从采集到交互式 Dashboard"></span>
-              </div>
-            </div>
-
-            <div class="phone-preview vision-panel" aria-hidden="true">
-              <div class="hero-panel-title">
-                <span>Computer Vision Workbench</span>
-                <strong>生猪聚集行为实时识别</strong>
-              </div>
-              <div class="vision-workbench">
-                <div class="live-frame">
-                  <video autoplay loop muted playsinline preload="metadata" poster="assets/generated/生猪聚集行为智能识别-cover.jpg">
-                    <source src="assets/optimized/pig-clustering-demo.mp4" type="video/mp4">
-                  </video>
-                  <span class="scan-line"></span>
-                  <span class="detect-box pig-a">pig 0.96</span>
-                  <span class="detect-box pig-b">pig 0.94</span>
-                  <span class="detect-box cluster-a">cluster 0.82</span>
-                </div>
-                <div class="pipeline-card">
-                  <span>01 3000 images</span>
-                  <span>02 YOLOv12-seg</span>
-                  <span>03 KNN + LOF</span>
-                  <span>04 Cluster Index</span>
-                </div>
-              </div>
-              <div class="vision-kpis">
-                <div><span>mAP</span><strong>96%</strong></div>
-                <div><span>FPS</span><strong>153.84</strong></div>
-                <div><span>Accuracy</span><strong>93.79%</strong></div>
+                <iframe
+                  title="寻梦 Xunmeng AI 产品移动端交互演示"
+                  data-src="https://dream.rxpeng.com/login"
+                  allow="clipboard-write; fullscreen; storage-access"
+                  credentialless
+                  hidden
+                ></iframe>
+                <a class="xunmeng-live-fallback" href="https://dream.rxpeng.com/" target="_blank" rel="noreferrer">打开完整产品</a>
               </div>
             </div>
 
@@ -182,11 +170,11 @@
         </div>
         <div>
           <strong>作品证据</strong>
-          <span>RAG 系统、视觉识别、票务 Dashboard 与数据库系统都有界面、视频或交互入口。</span>
+          <span>寻梦 AI 产品、RAG 系统、视觉识别、票务 Dashboard 与数据库系统都有界面、视频或交互入口。</span>
         </div>
         <div>
           <strong>成果入口</strong>
-          <span>简历 PDF、GitHub、Google Scholar、CSDN 与联系方式集中保留在页尾。</span>
+          <span>中文简历、英文 Resume、GitHub、Google Scholar、CSDN 与联系方式集中保留在页尾。</span>
         </div>
       </section>
 
@@ -204,6 +192,7 @@
           <button type="button" data-filter="vision">视觉</button>
           <button type="button" data-filter="data">数据</button>
           <button type="button" data-filter="ai">AI</button>
+          <button type="button" data-filter="product">产品</button>
           <button type="button" data-filter="system">系统</button>
         </div>
 
@@ -238,6 +227,49 @@
             </div>
           </article>
 
+          <article class="project-card" data-category="ai product">
+            <div class="project-media xunmeng-cover" aria-label="寻梦 Xunmeng AI 产品移动端预览">
+              <div class="xunmeng-card-preview" aria-hidden="true">
+                <div class="xunmeng-card-phone">
+                  <div class="xunmeng-card-screen">
+                    <span class="xunmeng-moon"></span>
+                    <strong>寻梦</strong>
+                    <p>AI Dream Journal</p>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+                </div>
+                <div class="xunmeng-card-copy">
+                  <span>Live Web App</span>
+                  <span>Android APK</span>
+                  <span>AI Story + Comic</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Case 02</span>
+                <span>AI Product</span>
+              </div>
+              <h3>寻梦 Xunmeng｜AI 梦境记录与漫画生成产品</h3>
+              <p>
+                基于 React、FastAPI、SQLite 与 Capacitor 构建，支持梦境记录、AI 整理/解读/追问、情绪关键词统计、漫画分镜与 Android APK 下载。
+              </p>
+              <div class="project-tags" aria-label="Project tags">
+                <span>AI Product</span>
+                <span>Capacitor</span>
+                <span>Android</span>
+                <span>FastAPI</span>
+              </div>
+              <div class="project-links">
+                <a href="#top" data-open-preview="mobile">移动端体验</a>
+                <a href="https://dream.rxpeng.com/" target="_blank" rel="noreferrer">打开产品</a>
+                <a href="assets/app-debug.apk" download>下载 APK</a>
+              </div>
+            </div>
+          </article>
+
           <article class="project-card" data-category="ai system">
             <div class="project-media" aria-label="轻量级学术论文 RAG 系统视频预览">
               <video
@@ -254,7 +286,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>Case 02</span>
+                <span>Case 03</span>
                 <span>AI Workflow</span>
               </div>
               <h3>轻量级学术论文 RAG 系统</h3>
@@ -279,7 +311,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>Case 03</span>
+                <span>Case 04</span>
                 <span>Data Dashboard</span>
               </div>
               <h3>票务分析与可视化平台</h3>
@@ -314,7 +346,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>Case 04</span>
+                <span>Case 05</span>
                 <span>Computer Vision</span>
               </div>
               <h3>基于机器视觉的智慧作物选种研究</h3>
@@ -349,7 +381,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>Case 05</span>
+                <span>Case 06</span>
                 <span>Vision Research</span>
               </div>
               <h3>生猪聚集行为智能识别</h3>
@@ -385,7 +417,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span>Case 06</span>
+                <span>Case 07</span>
                 <span>Database System</span>
               </div>
               <h3>博物馆藏品管理系统</h3>
@@ -530,7 +562,7 @@
             </div>
             <div class="motion-copy">
               <div class="motion-meta">
-                <span>Case 02</span>
+                <span>Case 03</span>
                 <span>AI Workflow</span>
               </div>
               <h3>轻量级学术论文 RAG 系统</h3>
@@ -558,7 +590,7 @@
             </div>
             <div class="motion-copy">
               <div class="motion-meta">
-                <span>Case 04</span>
+                <span>Case 05</span>
                 <span>Computer Vision</span>
               </div>
               <h3>基于机器视觉的智慧作物选种研究</h3>
@@ -583,7 +615,7 @@
             </div>
             <div class="motion-copy">
               <div class="motion-meta">
-                <span>Case 05</span>
+                <span>Case 06</span>
                 <span>Vision Research</span>
               </div>
               <h3>生猪聚集行为智能识别</h3>
@@ -604,7 +636,7 @@
             </div>
             <div class="motion-copy">
               <div class="motion-meta">
-                <span>Case 06</span>
+                <span>Case 07</span>
                 <span>Database System</span>
               </div>
               <h3>博物馆藏品管理系统</h3>
@@ -666,16 +698,24 @@
               <h3>毕业设计（进行中） · 双分区两阶段 DeRy 架构重组搜索</h3>
               <p>拆分 CNN/ResNet、RegNet、ViT、Swin 等预训练 blocks，结合 coarse/fine partition、两阶段重组搜索、zero-shot 评估与 LLM 结构知识图谱，形成可解释的架构重组策略。</p>
             </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2026/05 - 至今</span>
+              <h3>个人上线 AI 产品 · 寻梦 Xunmeng</h3>
+              <p>基于 React、FastAPI、SQLite 与 Capacitor 构建梦境记录产品，已部署 dream.rxpeng.com；支持 AI 整理/解读/追问、情绪关键词统计、漫画分镜与 Android APK 打包展示。</p>
+            </article>
           </div>
 
           <aside class="resume-panel" aria-label="Resume highlights">
             <h3>经历重点</h3>
             <ul>
               <li>时间线覆盖硕士 / 本科教育、毕业设计、科研项目、课程项目和系统开发课设。</li>
-              <li>项目方向集中在 AI 应用、机器视觉、数据分析、可视化 Dashboard 和数据库系统。</li>
+              <li>项目方向集中在 AI 产品、AI 应用、机器视觉、数据分析、可视化 Dashboard 和数据库系统。</li>
               <li>成果包括 Google Scholar 收录论文、会议论文、软件著作权和可交互作品展示。</li>
             </ul>
-            <a class="button secondary full" href="assets/peng-ruoxin-resume.pdf" download>下载简历 PDF</a>
+            <div class="resume-downloads" aria-label="Resume downloads">
+              <a class="button secondary full" href="assets/peng-ruoxin-resume-zh.pdf" download>中文简历 PDF</a>
+              <a class="button secondary full" href="assets/peng-ruoxin-resume-en.pdf" download>English Resume</a>
+            </div>
           </aside>
         </div>
       </section>
@@ -689,8 +729,8 @@
           <article>
             <span class="skill-index">01</span>
             <h3>AI 应用</h3>
-            <p>把论文语料处理成可问答系统：PDF 预处理、FAISS 检索、本地 qwen2 推理与 Streamlit 前端已串成可运行 Demo。</p>
-            <a href="#intro-rag">看 RAG 演示</a>
+            <p>已完成上线 AI 产品和 RAG 工具：寻梦串联梦境记录、AI 整理/追问、漫画生成与 APK 打包，RAG 系统支持论文证据问答。</p>
+            <a href="#top" data-open-preview="mobile">看 AI 产品</a>
           </article>
           <article>
             <span class="skill-index">02</span>
@@ -775,12 +815,13 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h2>欢迎聊 AI 应用、数据分析或算法实习。</h2>
-          <p>目前关注深圳 / 成都实习机会。可通过邮箱或微信联系，也可以继续查看代码、技术博客、学术主页和 PDF 简历。</p>
+          <p>目前关注深圳 / 成都实习机会。可通过邮箱或微信联系，也可以继续查看代码、技术博客、学术主页，以及中文 / 英文两版简历。</p>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:yiwu1777@gmail.com">yiwu1777@gmail.com</a>
           <span class="button secondary contact-static">微信：rxpeng1777</span>
-          <a class="button secondary" href="assets/peng-ruoxin-resume.pdf" download>下载简历 PDF</a>
+          <a class="button secondary" href="assets/peng-ruoxin-resume-zh.pdf" download>中文简历 PDF</a>
+          <a class="button secondary" href="assets/peng-ruoxin-resume-en.pdf" download>English Resume</a>
           <a class="button secondary" href="https://github.com/yiwu17" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button secondary" href="https://blog.csdn.net/m0_70098011?spm=1000.2115.3001.5343" target="_blank" rel="noreferrer">CSDN</a>
           <a class="button secondary" href="https://scholar.google.com/citations?user=SluSJCYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
